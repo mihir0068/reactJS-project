@@ -1,0 +1,129 @@
+.card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid purple;
+    border-radius: 20px;
+    margin-top: 20px;
+    width: 450px;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+.card-left{
+    display: flex;
+    flex-direction: row;
+}
+.card-names {
+    width: 150px
+}
+
+.card-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    height: fit-content;
+}
+
+.card-img img {
+    height: 70px;
+    width: 70px;
+    border-radius: 40px;
+    background-color: transparent;
+}
+
+.card-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: auto;
+    /* margin-right: auto; */
+}
+.link{
+    text-decoration: none;
+    color:black
+}
+.likebtn button {
+    background-color: transparent;
+    border-color: purple;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 8px;
+    width: 90px;
+    border-radius: 20px;
+}
+
+.detailsbtn button{
+    background-color: transparent;
+    border-color: purple;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 8px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.likebtn {
+    background-color: transparent;
+    border-color: purple;
+    cursor: pointer;
+    font-size: 22px;
+    padding: 6px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 20px;
+}
+
+.likebtn i {
+    font-size: 15px;
+}
+
+.liked {
+    /* background-color: #E4405F; */
+    color: #E4405F;
+    /* color: wheat; */
+}
+
+
+.bump {
+    animation: bump 300ms ease-out;
+}
+
+.unbump {
+    animation: unbump 300ms ease-out;
+
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: auto;
+        margin: 10px;
+    }
+
+
+}
+
+@keyframes bump {
+    0% {
+        transform: scale(0);
+    }
+
+    10% {
+        transform: scale(0.5);
+    }
+
+    30% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.15);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
